@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.0)
+project(B1)
+find_package(EDepSim)
+add_executable(myjob main.C)
+target_link_libraries(myjob PUBLIC EDepSim::edepsim_io)
