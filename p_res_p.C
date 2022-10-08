@@ -84,7 +84,7 @@ void p_res_p(){
 					
 					res_func = (pvec_true - pvec_reco)/pvec_true;
 					
-					if(pvec_true >= num*0.1 && pvec_true < (num+1)*0.1)
+					if(pvec_true >= num*0.1 && pvec_true < (num+1)*0.1)		//0.1 factor is to check in GeV units
 					{
 						hist_res -> Fill(num*0.1, res_func * 100);
 //						p_res_p -> SetPoint(num, num*0.5, abs((pvec_true - pvec_reco)/pvec_true)*100);
